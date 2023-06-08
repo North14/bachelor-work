@@ -1,0 +1,251 @@
+Working dir: /data
+
+Testing Read IOPS...
+fio: posix_fallocate fails: Not supported
+read_iops: (g=0): rw=randread, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=libaio, iodepth=64
+fio-2.17-45-g06cb
+Starting 1 process
+read_iops: Laying out IO file(s) (1 file(s) / 2048MiB)
+
+read_iops: (groupid=0, jobs=1): err= 0: pid=10: Sat Apr 22 16:39:45 2023
+   read: IOPS=3179, BW=12.5MiB/s (13.5MB/s)(188MiB/15117msec)
+  cpu          : usr=1.96%, sys=7.36%, ctx=75004, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=113.4%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=48068,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=12.5MiB/s (13.5MB/s), 12.5MiB/s-12.5MiB/s (13.5MB/s-13.5MB/s), io=188MiB (197MB), run=15117-15117msec
+
+
+Testing Write IOPS...
+write_iops: (g=0): rw=randwrite, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=libaio, iodepth=64
+fio-2.17-45-g06cb
+Starting 1 process
+
+write_iops: (groupid=0, jobs=1): err= 0: pid=18: Sat Apr 22 16:40:02 2023
+  write: IOPS=2603, BW=10.2MiB/s (10.7MB/s)(153MiB/15030msec)
+  cpu          : usr=1.46%, sys=5.60%, ctx=44523, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=115.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=0,39135,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=10.2MiB/s (10.7MB/s), 10.2MiB/s-10.2MiB/s (10.7MB/s-10.7MB/s), io=153MiB (161MB), run=15030-15030msec
+
+
+Testing Read Bandwidth...
+read_bw: (g=0): rw=randread, bs=128KiB-128KiB,128KiB-128KiB,128KiB-128KiB, ioengine=libaio, iodepth=64
+fio-2.17-45-g06cb
+Starting 1 process
+
+read_bw: (groupid=0, jobs=1): err= 0: pid=26: Sat Apr 22 16:40:20 2023
+   read: IOPS=2645, BW=331MiB/s (347MB/s)(5019MiB/15151msec)
+  cpu          : usr=1.72%, sys=8.03%, ctx=59025, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=112.4%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=40085,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=331MiB/s (347MB/s), 331MiB/s-331MiB/s (347MB/s-347MB/s), io=5019MiB (5262MB), run=15151-15151msec
+
+
+Testing Write Bandwidth...
+write_bw: (g=0): rw=randwrite, bs=128KiB-128KiB,128KiB-128KiB,128KiB-128KiB, ioengine=libaio, iodepth=64
+fio-2.17-45-g06cb
+Starting 1 process
+
+write_bw: (groupid=0, jobs=1): err= 0: pid=34: Sat Apr 22 16:40:37 2023
+  write: IOPS=600, BW=75.6MiB/s (79.3MB/s)(1142MiB/15107msec)
+  cpu          : usr=2.68%, sys=1.94%, ctx=14423, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.2%, 32=0.4%, >=64=112.9%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=0,9071,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+  WRITE: bw=75.6MiB/s (79.3MB/s), 75.6MiB/s-75.6MiB/s (79.3MB/s-79.3MB/s), io=1142MiB (1197MB), run=15107-15107msec
+
+
+Testing Read Latency...
+read_latency: (g=0): rw=randread, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=libaio, iodepth=4
+fio-2.17-45-g06cb
+Starting 1 process
+
+read_latency: (groupid=0, jobs=1): err= 0: pid=42: Sat Apr 22 16:40:55 2023
+   read: IOPS=1348, BW=5395KiB/s (5524kB/s)(79.7MiB/15007msec)
+    slat (usec): min=4, max=4299, avg=49.68, stdev=66.85
+    clat (usec): min=2, max=19931, avg=2913.78, stdev=1491.54
+     lat (usec): min=160, max=19958, avg=2962.57, stdev=1491.84
+    clat percentiles (usec):
+     |  1.00th=[  145],  5.00th=[  390], 10.00th=[ 2096], 20.00th=[ 2288],
+     | 30.00th=[ 2384], 40.00th=[ 2480], 50.00th=[ 2576], 60.00th=[ 2672],
+     | 70.00th=[ 2864], 80.00th=[ 3472], 90.00th=[ 4640], 95.00th=[ 5536],
+     | 99.00th=[ 8640], 99.50th=[10176], 99.90th=[13120], 99.95th=[14144],
+     | 99.99th=[18048]
+    lat (usec) : 4=0.04%, 10=0.01%, 20=0.01%, 50=0.05%, 100=0.10%
+    lat (usec) : 250=3.49%, 500=1.90%, 750=0.42%, 1000=0.15%
+    lat (msec) : 2=2.00%, 4=76.02%, 10=15.28%, 20=0.54%
+  cpu          : usr=1.18%, sys=3.43%, ctx=34734, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=112.4%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=20237,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=4
+
+Run status group 0 (all jobs):
+   READ: bw=5395KiB/s (5524kB/s), 5395KiB/s-5395KiB/s (5524kB/s-5524kB/s), io=79.7MiB (82.1MB), run=15007-15007msec
+
+
+Testing Write Latency...
+write_latency: (g=0): rw=randwrite, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=libaio, iodepth=4
+fio-2.17-45-g06cb
+Starting 1 process
+
+write_latency: (groupid=0, jobs=1): err= 0: pid=50: Sat Apr 22 16:41:12 2023
+  write: IOPS=568, BW=2273KiB/s (2328kB/s)(33.4MiB/15004msec)
+    slat (usec): min=5, max=3204, avg=104.12, stdev=174.08
+    clat (msec): min=1, max=30, avg= 6.93, stdev= 2.48
+     lat (msec): min=2, max=30, avg= 7.04, stdev= 2.47
+    clat percentiles (usec):
+     |  1.00th=[ 4048],  5.00th=[ 4512], 10.00th=[ 4704], 20.00th=[ 5088],
+     | 30.00th=[ 5408], 40.00th=[ 5792], 50.00th=[ 6176], 60.00th=[ 6752],
+     | 70.00th=[ 7520], 80.00th=[ 8512], 90.00th=[10176], 95.00th=[11712],
+     | 99.00th=[15424], 99.50th=[17792], 99.90th=[24704], 99.95th=[25728],
+     | 99.99th=[30336]
+    lat (msec) : 2=0.02%, 4=0.86%, 10=88.64%, 20=10.25%, 50=0.26%
+  cpu          : usr=0.71%, sys=1.71%, ctx=14113, majf=0, minf=3
+  IO depths    : 1=0.1%, 2=0.1%, 4=113.7%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=0,8524,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=4
+
+Run status group 0 (all jobs):
+  WRITE: bw=2273KiB/s (2328kB/s), 2273KiB/s-2273KiB/s (2328kB/s-2328kB/s), io=33.4MiB (34.1MB), run=15004-15004msec
+
+
+Testing Read Sequential Speed...
+fio: posix_fallocate fails: Not supported
+read_seq: (g=0): rw=read, bs=1024KiB-1024KiB,1024KiB-1024KiB,1024KiB-1024KiB, ioengine=libaio, iodepth=16
+...
+fio-2.17-45-g06cb
+Starting 4 threads
+read_seq: Laying out IO file(s) (1 file(s) / 3548MiB)
+
+read_seq: (groupid=0, jobs=1): err= 0: pid=58: Sat Apr 22 16:42:19 2023
+   read: IOPS=94, BW=95.3MiB/s (99.9MB/s)(1486MiB/15608msec)
+  cpu          : usr=0.11%, sys=0.79%, ctx=2176, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.3%, 8=0.5%, 16=112.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.9%, 8=0.0%, 16=0.1%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=1471,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+read_seq: (groupid=0, jobs=1): err= 0: pid=59: Sat Apr 22 16:42:19 2023
+   read: IOPS=96, BW=97.6MiB/s (102MB/s)(1528MiB/15673msec)
+  cpu          : usr=0.25%, sys=0.62%, ctx=2365, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.3%, 8=0.5%, 16=113.1%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.9%, 8=0.0%, 16=0.1%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=1513,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+read_seq: (groupid=0, jobs=1): err= 0: pid=60: Sat Apr 22 16:42:19 2023
+   read: IOPS=95, BW=96.5MiB/s (101MB/s)(1508MiB/15630msec)
+  cpu          : usr=0.06%, sys=0.91%, ctx=2293, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.3%, 8=0.5%, 16=114.6%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.9%, 8=0.0%, 16=0.1%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=1493,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+read_seq: (groupid=0, jobs=1): err= 0: pid=61: Sat Apr 22 16:42:19 2023
+   read: IOPS=94, BW=95.6MiB/s (99.7MB/s)(1471MiB/15475msec)
+  cpu          : usr=0.08%, sys=0.93%, ctx=2158, majf=0, minf=0
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.3%, 8=0.5%, 16=113.1%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.9%, 8=0.0%, 16=0.1%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=1456,0,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+
+Run status group 0 (all jobs):
+   READ: bw=382MiB/s (401MB/s), 95.6MiB/s-97.6MiB/s (99.7MB/s-102MB/s), io=5993MiB (6284MB), run=15475-15673msec
+
+
+Testing Write Sequential Speed...
+write_seq: (g=0): rw=write, bs=1024KiB-1024KiB,1024KiB-1024KiB,1024KiB-1024KiB, ioengine=libaio, iodepth=16
+...
+fio-2.17-45-g06cb
+Starting 4 threads
+
+write_seq: (groupid=0, jobs=1): err= 0: pid=69: Sat Apr 22 16:42:39 2023
+  write: IOPS=16, BW=17.2MiB/s (17.1MB/s)(287MiB/16727msec)
+  cpu          : usr=0.39%, sys=0.12%, ctx=514, majf=0, minf=0
+  IO depths    : 1=0.4%, 2=0.7%, 4=1.5%, 8=2.9%, 16=111.4%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.7%, 8=0.0%, 16=0.3%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=0,272,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+write_seq: (groupid=0, jobs=1): err= 0: pid=70: Sat Apr 22 16:42:39 2023
+  write: IOPS=19, BW=20.2MiB/s (21.8MB/s)(352MiB/17512msec)
+  cpu          : usr=0.46%, sys=0.08%, ctx=601, majf=0, minf=0
+  IO depths    : 1=0.3%, 2=0.6%, 4=1.2%, 8=2.4%, 16=108.9%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.7%, 8=0.0%, 16=0.3%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=0,337,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+write_seq: (groupid=0, jobs=1): err= 0: pid=71: Sat Apr 22 16:42:39 2023
+  write: IOPS=19, BW=20.5MiB/s (21.5MB/s)(357MiB/17454msec)
+  cpu          : usr=0.49%, sys=0.20%, ctx=647, majf=0, minf=0
+  IO depths    : 1=0.3%, 2=0.6%, 4=1.2%, 8=2.3%, 16=107.3%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.7%, 8=0.0%, 16=0.3%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=0,342,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+write_seq: (groupid=0, jobs=1): err= 0: pid=72: Sat Apr 22 16:42:39 2023
+  write: IOPS=16, BW=17.7MiB/s (18.6MB/s)(293MiB/16576msec)
+  cpu          : usr=0.45%, sys=0.11%, ctx=512, majf=0, minf=0
+  IO depths    : 1=0.4%, 2=0.7%, 4=1.4%, 8=2.9%, 16=109.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=99.7%, 8=0.0%, 16=0.3%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwt: total=0,278,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+
+Run status group 0 (all jobs):
+  WRITE: bw=73.7MiB/s (77.2MB/s), 17.2MiB/s-20.5MiB/s (17.1MB/s-21.5MB/s), io=1289MiB (1352MB), run=16576-17512msec
+
+
+Testing Read/Write Mixed...
+rw_mix: (g=0): rw=randrw, bs=4096B-4096B,4096B-4096B,4096B-4096B, ioengine=libaio, iodepth=64
+fio-2.17-45-g06cb
+Starting 1 process
+
+rw_mix: (groupid=0, jobs=1): err= 0: pid=80: Sat Apr 22 16:42:56 2023
+   read: IOPS=2705, BW=10.6MiB/s (11.1MB/s)(159MiB/15053msec)
+  write: IOPS=905, BW=3629KiB/s (3716kB/s)(53.4MiB/15053msec)
+  cpu          : usr=1.95%, sys=8.47%, ctx=76343, majf=0, minf=1
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=0.1%, 32=0.1%, >=64=113.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.1%, >=64=0.0%
+     issued rwt: total=40733,13629,0, short=0,0,0, dropped=0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=64
+
+Run status group 0 (all jobs):
+   READ: bw=10.6MiB/s (11.1MB/s), 10.6MiB/s-10.6MiB/s (11.1MB/s-11.1MB/s), io=159MiB (167MB), run=15053-15053msec
+  WRITE: bw=3629KiB/s (3716kB/s), 3629KiB/s-3629KiB/s (3716kB/s-3716kB/s), io=53.4MiB (55.1MB), run=15053-15053msec
+
+
+All tests complete.
+
+==================
+= Dbench Summary =
+==================
+Random Read/Write IOPS: 3179/2603. BW: 331MiB/s / 75.6MiB/s
+Average Latency (usec) Read/Write: 2962.57/
+Sequential Read/Write: 382MiB/s / 73.7MiB/s
+Mixed Random Read/Write IOPS: 2705/905
