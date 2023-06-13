@@ -1,21 +1,30 @@
 # CLOUD-NATIVE STORAGE SOLUTIONS FOR KUBERNETES - A performance Comparison
 
-This readme file was created on 2023-06-12 by Filip Andersson
+This readme file was created on 2023-06-13 by Filip Andersson
 
+## Information
 
-Author/Principal Investigator Information
+Bachelor Degree Project in Informatics
 
-Name: Filip Andersson
+First Cycle 30 credits
+
+Spring Term 2023
+
+Student: Filip Andersson
+
+Supervisor: Johan Zaxmy
+
+Examiner: Thomas Fischer
 
 Institution: University of Skövde
 
 Email: a20filan@student.his.se
 
-
 Date of data collection: 2023-05-18 to 2023-05-23
 
 Geographic location of data collection: Sweden
 
+## Data Description
 
 This folder contains the configurations files used and logs produced for my bachelor degree project in Informatics.
 
@@ -33,7 +42,7 @@ Folder 'azure' contains the configuration files for deploying infrastructure and
 
 Infrastructure for Azure can be found in folder 'azure/learn-teraform-provision-aks-cluster' and is based on terraform script from Hashicorp: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
 
-File structure:
+## File structure
 
 ```
 aws
