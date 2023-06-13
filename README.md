@@ -26,12 +26,13 @@ Geographic location of data collection: Sweden
 
 ## Data Description
 
-This folder contains the configurations files used and logs produced for my bachelor degree project in Informatics.
+This dataset contains the configurations files used and logs produced for my bachelor degree project in Informatics.
 
 Logs are produced output from the Kubernetes disk benchmarking tool dbench: https://github.com/leeliu/dbench
 
-Logs can be found in the 'results' folder and subdivided by platform, storage solution, and test occasion.
+Logs can be found in the 'a20filan_bachelors_work_logs.zip' zip file and subdivided in folders by platform, storage solution, and test occasion.
 
+Configuration files for deploying test sequence, and setting up infrastructure and storage solutions, can be found in 'a20filan_bachelors_work_configuration.zip' and is subdivided by platform, storage solution or infrastructure.
 
 Folder 'AWS' contains the configuration files for deploying infrastructure and setting up storage solutions and test procedure on Amazon Elastic Kubernetes Service
 
@@ -43,6 +44,8 @@ Folder 'azure' contains the configuration files for deploying infrastructure and
 Infrastructure for Azure can be found in folder 'azure/learn-teraform-provision-aks-cluster' and is based on terraform script from Hashicorp: https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
 
 ## File structure
+
+### a20filan_bachelors_work_configuration.zip
 
 ```
 aws
@@ -104,207 +107,211 @@ azure
 │   └── toolbox.yaml
 └── standard
     └── dbench.yaml
-results
-├── aws
-│   ├── openebs
-│   │   ├── occasion1
-│   │   │   ├── openebs1
-│   │   │   ├── openebs2
-│   │   │   ├── openebs3
-│   │   │   ├── openebs4
-│   │   │   └── openebs5
-│   │   ├── occasion2
-│   │   │   ├── openebs1
-│   │   │   ├── openebs2
-│   │   │   ├── openebs3
-│   │   │   ├── openebs4
-│   │   │   └── openebs5
-│   │   ├── occasion3
-│   │   │   ├── openebs1
-│   │   │   ├── openebs2
-│   │   │   ├── openebs3
-│   │   │   ├── openebs4
-│   │   │   └── openebs5
-│   │   └── occasion4
-│   │       ├── openebs1
-│   │       ├── openebs2
-│   │       ├── openebs3
-│   │       ├── openebs4
-│   │       └── openebs5
-│   ├── portworx
-│   │   ├── occasion1
-│   │   │   ├── portworx1
-│   │   │   ├── portworx2
-│   │   │   ├── portworx3
-│   │   │   ├── portworx4
-│   │   │   └── portworx5
-│   │   ├── occasion2
-│   │   │   ├── portworx1
-│   │   │   ├── portworx2
-│   │   │   ├── portworx3
-│   │   │   ├── portworx4
-│   │   │   └── portworx5
-│   │   ├── occasion3
-│   │   │   ├── portworx1
-│   │   │   ├── portworx2
-│   │   │   ├── portworx3
-│   │   │   ├── portworx4
-│   │   │   └── portworx5
-│   │   └── occasion4
-│   │       ├── portworx1
-│   │       ├── portworx2
-│   │       ├── portworx3
-│   │       ├── portworx4
-│   │       └── portworx5
-│   ├── rook-ceph
-│   │   ├── occasion1
-│   │   │   ├── rook-ceph1
-│   │   │   ├── rook-ceph2
-│   │   │   ├── rook-ceph3
-│   │   │   ├── rook-ceph4
-│   │   │   └── rook-ceph5
-│   │   ├── occasion2
-│   │   │   ├── rook-ceph1
-│   │   │   ├── rook-ceph2
-│   │   │   ├── rook-ceph3
-│   │   │   ├── rook-ceph4
-│   │   │   └── rook-ceph5
-│   │   ├── occasion3
-│   │   │   ├── rook-ceph1
-│   │   │   ├── rook-ceph2
-│   │   │   ├── rook-ceph3
-│   │   │   ├── rook-ceph4
-│   │   │   └── rook-ceph5
-│   │   └── occasion4
-│   │       ├── rook-ceph1
-│   │       ├── rook-ceph2
-│   │       ├── rook-ceph3
-│   │       ├── rook-ceph4
-│   │       └── rook-ceph5
-│   └── standard
-│       ├── occasion1
-│       │   ├── standard1
-│       │   ├── standard2
-│       │   ├── standard3
-│       │   ├── standard4
-│       │   └── standard5
-│       ├── occasion2
-│       │   ├── standard1
-│       │   ├── standard2
-│       │   ├── standard3
-│       │   ├── standard4
-│       │   └── standard5
-│       ├── occasion3
-│       │   ├── standard1
-│       │   ├── standard2
-│       │   ├── standard3
-│       │   ├── standard4
-│       │   └── standard5
-│       └── occasion4
-│           ├── standard1
-│           ├── standard2
-│           ├── standard3
-│           ├── standard4
-│           └── standard5
-└── azure
-    ├── openebs
-    │   ├── occasion1
-    │   │   ├── openebs1
-    │   │   ├── openebs2
-    │   │   ├── openebs3
-    │   │   ├── openebs4
-    │   │   └── openebs5
-    │   ├── occasion2
-    │   │   ├── openebs1
-    │   │   ├── openebs2
-    │   │   ├── openebs3
-    │   │   ├── openebs4
-    │   │   └── openebs5
-    │   ├── occasion3
-    │   │   ├── openebs1
-    │   │   ├── openebs2
-    │   │   ├── openebs3
-    │   │   ├── openebs4
-    │   │   └── openebs5
-    │   └── occasion4
-    │       ├── openebs1
-    │       ├── openebs2
-    │       ├── openebs3
-    │       ├── openebs4
-    │       └── openebs5
-    ├── portworx
-    │   ├── occasion1
-    │   │   ├── portworx1
-    │   │   ├── portworx2
-    │   │   ├── portworx3
-    │   │   ├── portworx4
-    │   │   └── portworx5
-    │   ├── occasion2
-    │   │   ├── portworx1
-    │   │   ├── portworx2
-    │   │   ├── portworx3
-    │   │   ├── portworx4
-    │   │   └── portworx5
-    │   ├── occasion3
-    │   │   ├── portworx1
-    │   │   ├── portworx2
-    │   │   ├── portworx3
-    │   │   ├── portworx4
-    │   │   └── portworx5
-    │   └── occasion4
-    │       ├── portworx1
-    │       ├── portworx2
-    │       ├── portworx3
-    │       ├── portworx4
-    │       └── portworx5
-    ├── rook-ceph
-    │   ├── occasion1
-    │   │   ├── rook-ceph1
-    │   │   ├── rook-ceph2
-    │   │   ├── rook-ceph3
-    │   │   ├── rook-ceph4
-    │   │   └── rook-ceph5
-    │   ├── occasion2
-    │   │   ├── rook-ceph1
-    │   │   ├── rook-ceph2
-    │   │   ├── rook-ceph3
-    │   │   ├── rook-ceph4
-    │   │   └── rook-ceph5
-    │   ├── occasion3
-    │   │   ├── rook-ceph1
-    │   │   ├── rook-ceph2
-    │   │   ├── rook-ceph3
-    │   │   ├── rook-ceph4
-    │   │   └── rook-ceph5
-    │   └── occasion4
-    │       ├── rook-ceph1
-    │       ├── rook-ceph2
-    │       ├── rook-ceph3
-    │       ├── rook-ceph4
-    │       └── rook-ceph5
-    └── standard
-        ├── occasion1
-        │   ├── standard1
-        │   ├── standard2
-        │   ├── standard3
-        │   ├── standard4
-        │   └── standard5
-        ├── occasion2
-        │   ├── standard1
-        │   ├── standard2
-        │   ├── standard3
-        │   ├── standard4
-        │   └── standard5
-        ├── occasion3
-        │   ├── standard1
-        │   ├── standard2
-        │   ├── standard3
-        │   ├── standard4
-        │   └── standard5
-        └── occasion4
-            ├── standard1
-            ├── standard2
-            ├── standard3
-            ├── standard4
-            └── standard5
+```
+
+### a20filan_bachelors_work_logs.zip
+
+```
+aws
+├── openebs
+│   ├── occasion1
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   ├── occasion2
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   ├── occasion3
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   └── occasion4
+│       ├── openebs1
+│       ├── openebs2
+│       ├── openebs3
+│       ├── openebs4
+│       └── openebs5
+├── portworx
+│   ├── occasion1
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   ├── occasion2
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   ├── occasion3
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   └── occasion4
+│       ├── portworx1
+│       ├── portworx2
+│       ├── portworx3
+│       ├── portworx4
+│       └── portworx5
+├── rook-ceph
+│   ├── occasion1
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   ├── occasion2
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   ├── occasion3
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   └── occasion4
+│       ├── rook-ceph1
+│       ├── rook-ceph2
+│       ├── rook-ceph3
+│       ├── rook-ceph4
+│       └── rook-ceph5
+└── standard
+    ├── occasion1
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    ├── occasion2
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    ├── occasion3
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    └── occasion4
+        ├── standard1
+        ├── standard2
+        ├── standard3
+        ├── standard4
+        └── standard5
+azure
+├── openebs
+│   ├── occasion1
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   ├── occasion2
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   ├── occasion3
+│   │   ├── openebs1
+│   │   ├── openebs2
+│   │   ├── openebs3
+│   │   ├── openebs4
+│   │   └── openebs5
+│   └── occasion4
+│       ├── openebs1
+│       ├── openebs2
+│       ├── openebs3
+│       ├── openebs4
+│       └── openebs5
+├── portworx
+│   ├── occasion1
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   ├── occasion2
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   ├── occasion3
+│   │   ├── portworx1
+│   │   ├── portworx2
+│   │   ├── portworx3
+│   │   ├── portworx4
+│   │   └── portworx5
+│   └── occasion4
+│       ├── portworx1
+│       ├── portworx2
+│       ├── portworx3
+│       ├── portworx4
+│       └── portworx5
+├── rook-ceph
+│   ├── occasion1
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   ├── occasion2
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   ├── occasion3
+│   │   ├── rook-ceph1
+│   │   ├── rook-ceph2
+│   │   ├── rook-ceph3
+│   │   ├── rook-ceph4
+│   │   └── rook-ceph5
+│   └── occasion4
+│       ├── rook-ceph1
+│       ├── rook-ceph2
+│       ├── rook-ceph3
+│       ├── rook-ceph4
+│       └── rook-ceph5
+└── standard
+    ├── occasion1
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    ├── occasion2
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    ├── occasion3
+    │   ├── standard1
+    │   ├── standard2
+    │   ├── standard3
+    │   ├── standard4
+    │   └── standard5
+    └── occasion4
+        ├── standard1
+        ├── standard2
+        ├── standard3
+        ├── standard4
+        └── standard5
 ```
