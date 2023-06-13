@@ -12,7 +12,7 @@ Institution: University of Skövde
 Email: a20filan@student.his.se
 
 
-Date of data collection: 2023-05-xxx to 2023-05-xxx
+Date of data collection: 2023-05-18 to 2023-05-23
 
 Geographic location of data collection: Sweden
 
